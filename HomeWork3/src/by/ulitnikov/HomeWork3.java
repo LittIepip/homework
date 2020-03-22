@@ -1,12 +1,18 @@
 package by.ulitnikov;
 
-public class Main {
+import java.util.Scanner;
+
+public class HomeWork3 {
 
     public static void main(String[] args) {
-	int i = 65161847;
-	if(i % 10 == 7){
+
+        System.out.print("Введите любое целое число: ");
+        Scanner scanner = new Scanner(System.in);
+	    int i = scanner.nextInt();
+
+	    if((i % 10 == 7) || (i % -10 == -7)){
         System.out.println("Семерка на конце числа : " + i + " присутствует ");
-    } else {
+        } else {
         System.out.println("Семерка на конце числа : " + i + " отсутствует ");
         }
     }
